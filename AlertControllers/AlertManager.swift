@@ -78,6 +78,7 @@ extension AlertManager {
 //MARK: - TextField Alerts
    
 extension AlertManager {
+    
     struct AlertAction {
         let title: String
         let style: UIAlertAction.Style
@@ -94,7 +95,8 @@ extension AlertManager {
         textFields.forEach({ alert.addTextField(configurationHandler: $0) })
         actions.forEach { action in
             alert.addAction(UIAlertAction(title: action.title, style: action.style, handler: { _ in
-                
+                let strings = (alert.textFields ?? []).compactMap { $0.text?.isEmpty == false ? $0.text : nil}
+                action.handler(strings)
             }))
         }
         
@@ -103,4 +105,30 @@ extension AlertManager {
         }
         
     }
+        static func signInAlert(on vc: UIViewController,
+                                 completion: @escaping ([String]) -> Void) {
+            
+            var textFields: [(UITextField) -> ()] = []
+            
+           
+             textFields.append { (textField) in
+                 textField.placeholder = "Username"
+                 textField.autocapitalizationType = .words
+            }
+            
+            textFields.append { (textField) in
+                textField.placeholder = "Password"
+                textField.autocapitalizationType = .words
+                textField.isSecureTextEntry = true
+            }
+            
+            let actions: [AlertAction] = [
+                AlertAction(title: "Cancel", style: .cancel, handler: { _ in completion([]) }),
+                AlertAction(title: "Confirm", style: .default, handler:  completion)
+            ]
+            
+            self.showTextFieldAlert(on: vc, title: "Sign In", textFields: textFields, actions: actions)
+        }
+        
+    
 }

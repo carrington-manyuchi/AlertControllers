@@ -36,7 +36,11 @@ class ViewController: UIViewController {
 //                            print("Cancelled")
 //                        }
 //        }
-//        
+//
         
+        
+        AlertManager.signInAlert(on: self) { strings in
+            print(strings)
+        }
     }
 }
