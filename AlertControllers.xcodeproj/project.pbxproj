@@ -12,6 +12,10 @@
 		8C11E5462A82558900D993DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E5452A82558900D993DE /* ViewController.swift */; };
 		8C11E54B2A82558B00D993DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C11E54A2A82558B00D993DE /* Assets.xcassets */; };
 		8C11E54E2A82558B00D993DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C11E54C2A82558B00D993DE /* LaunchScreen.storyboard */; };
+		8C11E5572A84DF3900D993DE /* AlertTextFieldOnVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E5562A84DF3900D993DE /* AlertTextFieldOnVC.swift */; };
+		8C11E5592A84E0AB00D993DE /* AlertOnVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E5582A84E0AB00D993DE /* AlertOnVC2.swift */; };
+		8C11E55B2A84E41D00D993DE /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E55A2A84E41D00D993DE /* AlertManager.swift */; };
+		8C11E55D2A84E64D00D993DE /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E55C2A84E64D00D993DE /* AlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		8C11E54A2A82558B00D993DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C11E54D2A82558B00D993DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C11E54F2A82558B00D993DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C11E5562A84DF3900D993DE /* AlertTextFieldOnVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTextFieldOnVC.swift; sourceTree = "<group>"; };
+		8C11E5582A84E0AB00D993DE /* AlertOnVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertOnVC2.swift; sourceTree = "<group>"; };
+		8C11E55A2A84E41D00D993DE /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		8C11E55C2A84E64D00D993DE /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 			children = (
 				8C11E5552A826C4200D993DE /* Supporting */,
 				8C11E5452A82558900D993DE /* ViewController.swift */,
+				8C11E5562A84DF3900D993DE /* AlertTextFieldOnVC.swift */,
+				8C11E5582A84E0AB00D993DE /* AlertOnVC2.swift */,
+				8C11E55C2A84E64D00D993DE /* AlertViewController.swift */,
+				8C11E55A2A84E41D00D993DE /* AlertManager.swift */,
 				8C11E54F2A82558B00D993DE /* Info.plist */,
 			);
 			path = AlertControllers;
@@ -143,7 +155,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C11E5462A82558900D993DE /* ViewController.swift in Sources */,
+				8C11E55D2A84E64D00D993DE /* AlertViewController.swift in Sources */,
 				8C11E5422A82558900D993DE /* AppDelegate.swift in Sources */,
+				8C11E55B2A84E41D00D993DE /* AlertManager.swift in Sources */,
+				8C11E5572A84DF3900D993DE /* AlertTextFieldOnVC.swift in Sources */,
+				8C11E5592A84E0AB00D993DE /* AlertOnVC2.swift in Sources */,
 				8C11E5442A82558900D993DE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

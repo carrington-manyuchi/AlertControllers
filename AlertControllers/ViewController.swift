@@ -8,12 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray5
+        
+        
+       // AlertManager.showNotification(on: self)
+        AlertManager.showAlertText(on: self, with: "Heading", with: "This is you alert manager")
+        
     }
-
-
 }
-
