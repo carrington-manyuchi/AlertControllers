@@ -15,7 +15,28 @@ class ViewController: UIViewController {
         
         
        // AlertManager.showNotification(on: self)
-        AlertManager.showAlertText(on: self, with: "Heading", with: "This is you alert manager")
+        
+            //AlertManager.showAlertText(on: self, with: "Heading", with: "This is you alert manager")
+        
+//        AlertManager.showDeleteConfirmation(on: self) { didDelete in
+//            if didDelete == true {
+//                print("deleted")
+//
+//            } else {
+//                print("Cancelled")
+//            }
+//        }
+        
+        
+//        AlertManager.showStartWorkOutAlert(on: self) { didDelete in
+//            if didDelete == true {
+//                            print("deleted")
+//            
+//                        } else {
+//                            print("Cancelled")
+//                        }
+//        }
+//        
         
     }
 }
